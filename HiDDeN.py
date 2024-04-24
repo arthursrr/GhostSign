@@ -258,5 +258,8 @@ class HiDDeN:
         # Final linear layer to classify the image
         adversary_output = Dense(2, activation="softmax")(x)
         discriminator_model = Model(
-            input_images, adversary_output, name='discriminator')
+            [input_images, target_images], 
+            adversary_output, 
+            name='discriminator',
+        )
         return discriminator_model

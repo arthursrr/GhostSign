@@ -1,4 +1,5 @@
 data/
 logs/
+training_checkpoints
 .vscode
 __pycache__
